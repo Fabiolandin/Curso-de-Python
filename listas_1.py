@@ -25,6 +25,9 @@ else:
 lista.sort()
 print(lista)
 
+#Imprimir uma lista inverso
+lista.reverse()
+
 #Podemos contar o número de ocorrencias de cada lista
 print(lista.count(2))
 print(lista3.count('O'))
@@ -35,3 +38,18 @@ print(lista)
 
 lista.extend([1, 2, 3])
 print(lista)
+
+#remover o ultimo elemento da lista, ou remover pelo indice
+print(lista3)
+lista3.pop()
+print(lista3)
+lista3.pop(2)
+print(lista3)
+
+"""
+#Convertendo String para lista
+ curso = 'Programação em Python'
+ print(curso)
+ curso = curso.split()
+ print(curso)
+"""
