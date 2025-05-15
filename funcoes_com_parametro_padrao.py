@@ -5,7 +5,6 @@ Funções com parametro padrão (Default Paramters)
 
 
 """
-from Ex_modulo4 import contador
 
 
 #Exemplo 1 - se colocarmos o valor na função, ele fica como padrão, mas pode ser alterado se repassarmos ele
