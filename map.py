@@ -21,7 +21,7 @@ for r in raios:
 print(areas)
 
 # Forma 2 - Map
-#Map é uma funçã que recebe dois parametros: O primeiro a função, e o segundo um iteravel. Retorna um map objetc
+#Map é uma função que recebe dois parametros: O primeiro a função, e o segundo um iteravel. Retorna um map objetc
 
 areas = map(area, raios)
 
