@@ -27,6 +27,17 @@ produtos = [
     {'nome': 'Carregador', 'preco': 80}
 ]
 
+# Filtra produtos com preço > 500 e mapeia para seus nomes
+nomes_produtos_caros = map(
+    lambda produto: produto['nome'],
+    filter(
+        lambda produto: produto['preco'] > 500,
+        produtos
+    )
+)
+
+# Converte o resultado em uma lista (opcional, para visualização)
+print(list(nomes_produtos_caros))
 
 """
 4)Crie uma list comprehension que percorre uma string e substitui cada vogal por um "*". - fiz solo +1 ponto
