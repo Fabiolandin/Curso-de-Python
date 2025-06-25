@@ -42,17 +42,17 @@ class Carro(Veiculo):
         self.__portas = portas
 
     @property
-    def porta(self):
+    def portas(self):
         return self.__portas
 
-    @porta.setter
+    @portas.setter
     def porta(self, porta):
         self.__portas = porta
 
     def imprimir(self):
         print(f'Marca: {self.marca}, Modelo: {self.modelo}, Portas {self.__portas}')
 
-carro2 = Carro('Ford', 'Amarok', 4)
+carro2 = Carro('Volkswagen ', 'Amarok', 4)
 carro2.imprimir()
 
 """
