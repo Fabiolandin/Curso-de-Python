@@ -65,13 +65,16 @@ def listar_produto() -> None:
         print('Listagem de produtos')
         print('====================')
         for produto in produtos:
+            print(f'Código: {produto.codigo}')
             print(f'Nome: {produto.nome}')
+            print(f'Preço: {produto.preco}')
             print('=====================')
             sleep(2)
     else:
         print('Nenhum produto foi cadastrado.')
-        sleep(2)
+        sleep(1)
         menu()
+    menu()
 
 def comprar_produto() -> None:
     if len(produtos) > 0:
@@ -124,7 +127,7 @@ def visualizar_carrinho() -> None:
         for item in carrinho:
             for dados in item.items():
                 print(dados[0])
-                print(f'Quantitdade: {dados[1]}')
+                print(f'Quantidade: {dados[1]}')
                 print('=======================')
                 sleep(2)
     else:
@@ -163,3 +166,4 @@ def pega_produto_por_codigo(codigo: int) -> Produto:
 
 if __name__ == '__main__':
     main()
+    menu()

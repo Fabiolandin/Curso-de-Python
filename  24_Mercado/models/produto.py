@@ -19,7 +19,7 @@ class Produto:
 
     @property
     def preco(self: object) -> float:
-        retur self.__preco
+        return self.__preco
 
     def __str__(self: object) -> str:
         return f'Código: {self.codigo} \nNome: {self.nome} \nPreço: {formata_flot_str_moeda(self.preco)}'
