@@ -1,4 +1,4 @@
-from typing import list
+from typing import List
 from time import sleep
 
 from models.cliente import Cliente
