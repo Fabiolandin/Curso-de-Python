@@ -3,7 +3,117 @@
 Repositório com anotações e resumos que escrevi com minhas próprias palavras durante o curso de Python da Geek University. Organizado por módulos para facilitar revisões e consultas rápidas.
 
 ---
+## 🧰 Módulo 6 - Coleções em Python
 
+### 🔹 Listas
+
+Listas em python, funcionam como vetores/matrizes, com a diferença de serem dinâmicos e também podemos colocar qualquer tipo de dados.
+As listas em Python são representadas por colchetes: []
+
+### 🔹 Tuplas
+
+Tuplas são bem parecidas com listas, existem 2 diferenças bases:
+
+1- As tuplas são representadas por parenteses (4,) e virgula ,
+2- As tuplas são imutáveis: não podem ser mudadas, tota alteração em uma tupla gera uma nova tupla
+3- As tuplas são mais rápidas do que as listas
+4- Tuplas deixam seu código mais seguro
+
+### 🔹 Dicionários
+
+Em algumas linguagens dicionários são iguais a mapas em Python dicionários são representados por chaves {}.
+
+### 🔹 Conjuntos
+
+- Conjuntos em python é uma referencia a teoria dos conjuntos matemática.
+- Em python são chamados de Sets, e não possuem valores duplicados e nem ordenados.
+
+### 🔹 Módulo Collections - Counter
+Counter -> Recebe um iterável como parâmetro e cria um objeto do tipo Collections Counter que é parecido com dicionário.
+
+### 🔹 Módulo Collections - Default Dict
+
+Default dict -  ao criar um dicionário nós informamos um valor default, podendo utilizar lambda para isso. Caso tentamos acessar uma chave que não existe, essa chave será criada e o valor default será atribuído.
+
+### 🔹 Módulo Collections - Ordered Dict
+
+Nada mais é que um definir a ordenação de um dicionário usando OrderedDict
+
+### 🔹 Módulo Collections - Named Tuple
+
+São tuplas diferenciadas onde especificamos um nome para a mesma e parâmetros.
+Exemplo: ray = cachorro(idade=2, raca='Chow-Chow', nome='Ray')
+
+### 🔹 Módulo Collections - Deque
+
+Podemos dizer que o deque é uma lista de alta performance, tirando isso é a mesma finalidade.
+
+✅ **Fim do módulo 6**
+
+---
+## 🧠 Módulo 7 - Funções em Python
+
+### 🔹 Definindo funções
+Funções são pequenos partes de códigos que realizam tarefas especificas.
+- Pode ou não receber entradas de dados e retornar uma saída de dados.
+- Util para utilizar e reutilizar por repetidas vezes afins de reduzir o código.
+
+### 🔹 Funções com retorno
+Nada mais são que funções que possuem a linha 'return', o return finaliza a função e retorna algum valor ou string especificado
+
+Exemplo de função que retorna valor da conta 7 * 7
+```python
+def quadrado_de_7():
+    return 7 * 7
+```
+
+### 🔹 Funções com parâmetro
+Funções que recebem dados para serem processados dentro da mesma
+
+### 🔹 Funções com parâmetro padrão
+Funções onde a passagem de parâmetros seja opcional, se você passar pode executar uma parte da função, se não passar ela executa da mesma forma.
+
+### 🔹 Documentando funções com Docstrings
+é um """ oque a função faz """ dentro da função, podemos ainda fazer o acesso a documentação com a função help()
+
+### 🔹 Entendendo Args
+Args é um parâmetro como outro qualquer, isso significa que você poderá chamar qualquer outra coisa, desde que comece com o *asterisco.
+Args é um parâmetro utilizado em funções, e como se não quisesse definir quantos parâmetros deseja receber então como como *args, só que recebe como tupla
+
+### 🔹 Entendendo Kwargs
+Igual a args porém ele coloca os valores extras em um dicionário, os parâmetros args e kwargs não são obrigatórios.
+
+✅ **Fim do módulo 7**
+
+---
+## 🔁 Módulo 8 - List Comprehension e Coleções
+
+### 🔹 List Comprehension - Parte 1
+Utilizando list comprehension nos podemos gerar novas listas com dados processados a partir de outro iterável. Basicamente é você iterar lista dentro da própria lista.
+
+Sintaxe da list comprehension
+```python
+[ dado  for dado in iterável ]
+```
+
+### 🔹 List Comprehension - Parte 2
+Também é possível adicionar condicionais dentro das lists comprehension
+Exemplo:
+```python
+numeros = [1, 2, 3, 4, 5]
+pares = [numero for numero in numeros if numero % 2 == 0]
+impares = [numero for numero in numeros if numero % 2 != 0]
+```
+
+### 🔹 Listas aninhadas
+Listas aninhadas são listas dentro de listas, como uma matriz 3x3
+
+### 🔹 Dictionary Comprehension
+A mesma coisa do list comprehension só que com dicionário da pra iterar dentro do dicionário e até mesmo usar estruturas condicionais.
+
+✅ **Fim do módulo 8**
+
+---
 ## 📌 Módulo 14 - Decoradores em Python
 
 ### 🔹 Funções de maior grandeza
