@@ -9,10 +9,10 @@ print(os.path.exists('frutas.txt')) #True
 
 #Descobrindo se um diretório existe - relativos
 print(os.path.exists('Pandas')) # True
-print(os.path.exists('geek/university')) # True
+print(os.path.exists('../11_Trabalhando_com_modulos_Python/geek/university')) # True
 
 #Paths absolutos
-print(os.path.exists('geek/university/geek3.py')) # True
+print(os.path.exists('../11_Trabalhando_com_modulos_Python/geek/university/geek3.py')) # True
 
 #Criando arquivos
 #Forma 1
@@ -31,8 +31,9 @@ os.mkdir('templates')
 os.makedirs('templates/geek/university')
 
 #Renomear arquivos e diretórios
-os.rename('Exercicios_curso', 'Exercicios_do_curso')
-os.rename('geek/university/geek3', 'geek/university/geek')
+os.rename('../Exercicios_curso', 'Exercicios_do_curso')
+os.rename('11_Trabalhando_com_modulos_Python/geek/university/geek3',
+          '11_Trabalhando_com_modulos_Python/geek/university/geek')
 
 #Deletando arquivos - tome cuidado, ao deletarmos o arquvi/diretório eles não iram para a lixeira!!!
 os.remove('arquivo.txt')

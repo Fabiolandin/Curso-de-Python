@@ -13,13 +13,13 @@ import os
 print(os.getcwd())
 
 #Para mudar o diretório podemos utilizar o chdir()
-os.chdir('..')
+os.chdir('../..')
 
 print(os.getcwd())
 
 #Usuarios Windows
 #Ter cuidado ao verificar diretórios
-print(os.path.isabs('C:\\Users\\Fabio\\PycharmProjects\\Curso-de-Python'))
+print(os.path.isabs('/'))
 
 #Podemos identificar o sistema operacional com o módulo os NT = windows, posix = mac, linux
 print(os.name)
