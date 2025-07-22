@@ -115,7 +115,7 @@ A mesma coisa do list comprehension só que com dicionário da pra iterar dentro
 
 ---
 
-🧠 Módulo 9 - Expressões Lambdas e Funções Integradas
+## 🧠 Módulo 9 - Expressões Lambdas e Funções Integradas
 🔹 Utilizando Lambdas
 Conhecidas por expressões lambdas, ou simplesmente lambdas, são funções sem nome, ou seja, funções anônimas. Lambdas são usadas para coisas mais simples, sem muitas linhas e complexidade sendo assim melhor que função para o caso.
 
@@ -155,10 +155,11 @@ round() -> Retorna um número arredondado para um n dígito de precisão. Se n n
 🔹 Zip
 zip() -> Cria um iterável (Zip Object) que agrega elementos de cada um dos iteráveis passados como entrada em pares.
 
-✅ Fim do módulo 9
+✅ **Fim do módulo 9**
+
 ---
 
-🛠️ Módulo 10 - Debugando e Tratando Erros
+## 🛠️ Módulo 10 - Debugando e Tratando Erros
 🔹 Erros mais comuns em Python
 
 SyntaxError -> Ocorre quando o Python encontra um erro de sintaxe, você escreveu algo que o Python não reconhece como parte da linguagem.
@@ -191,10 +192,11 @@ finally: Sempre será executado ao final, geralmente utilizado para fechar ou de
 PDB -> Python Debugger
 Para utilizar o PDB precisamos importar a biblioteca e então utilizar a função set_trace().
 
-✅ Fim do módulo 10
+✅ **Fim do módulo 10**
+
 ---
 
-📦 Módulo 11 - Trabalhando com Módulos Python
+## 📦 Módulo 11 - Trabalhando com Módulos Python
 🔹 O módulo Random
 Módulo random -> Possui várias funções para geração de números pseudo-aleatórios, bom para sorteios de números aleatórios e geração dos mesmos.
 
@@ -221,7 +223,7 @@ __name__
 
 __main__
 
-✅ Fim do módulo 11
+✅ **Fim do módulo 11**
 
 ---
 ## 📌 Módulo 14 - Decoradores em Python
