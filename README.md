@@ -114,6 +114,116 @@ A mesma coisa do list comprehension só que com dicionário da pra iterar dentro
 ✅ **Fim do módulo 8**
 
 ---
+
+🧠 Módulo 9 - Expressões Lambdas e Funções Integradas
+🔹 Utilizando Lambdas
+Conhecidas por expressões lambdas, ou simplesmente lambdas, são funções sem nome, ou seja, funções anônimas. Lambdas são usadas para coisas mais simples, sem muitas linhas e complexidade sendo assim melhor que função para o caso.
+
+🔹 Map
+Map é uma função que recebe dois parâmetros: O primeiro a função, e o segundo um iterável. Retorna um map object. É uma das ferramentas mais práticas do Python, você passa a função e uma lista de iteráveis e o map passa a função em cada elemento da lista, é como um iterável próprio de função.
+
+🔹 Filter
+filter() -> Serve para filtrar dados de uma determinada coleção.
+
+🔹 Reduce
+A partir do Python 3 a função reduce não é mais uma função integrada, agora precisa importar functools.
+
+🔹 Any e All
+all() -> Retorna True se todos os elementos do iterável são verdadeiros ou ainda se o iterável está vazio.
+any() -> Retorna True se qualquer elemento for verdadeiro, se o iterável estiver vazio retorna False.
+
+🔹 Generators
+Tuple comprehension se chamam generators, generators são mais leves e mais performáticos.
+
+🔹 Sorted
+Apesar do nome, não é igual à função sort(), o sorted() só funciona em listas. Ele serve para ordenar elementos, porém não modifica a lista.
+
+🔹 Min e Max
+Funciona pra tupla, conjunto, dicionário, lista.
+max() -> retorna o maior valor
+min() -> retorna o menor valor
+
+🔹 Reversed
+A função reversed() funciona com qualquer iterável, é basicamente inverter o iterável.
+
+🔹 Len, Abs, Sum e Round
+len() -> Retorna o tamanho (ou seja, o número de itens) de um iterável.
+abs() -> Retorna o valor absoluto de um número inteiro ou real
+sum() -> Recebe como parâmetro um iterável, podendo receber um valor inicial, e retorna a soma total dos elementos
+round() -> Retorna um número arredondado para um n dígito de precisão. Se n não for informado, retorna o inteiro mais próximo da entrada.
+
+🔹 Zip
+zip() -> Cria um iterável (Zip Object) que agrega elementos de cada um dos iteráveis passados como entrada em pares.
+
+✅ Fim do módulo 9
+---
+
+🛠️ Módulo 10 - Debugando e Tratando Erros
+🔹 Erros mais comuns em Python
+
+SyntaxError -> Ocorre quando o Python encontra um erro de sintaxe, você escreveu algo que o Python não reconhece como parte da linguagem.
+
+NameError -> Ocorre quando uma variável/função não foi definida.
+
+TypeError -> Ocorre quando uma função/operação é aplicada a um tipo errado.
+
+IndexError -> Ocorre quando tentamos acessar um elemento em uma lista ou outro tipo de dado indexado utilizando um índice inválido.
+
+ValueError -> Ocorre quando uma função/operação built-in recebe um argumento com tipo correto mas valor inapropriado.
+
+🔹 Levantando os próprios erros com raise
+raise é uma palavra reservada como def. Raise é útil para criar nossas próprias mensagens de erro.
+Exemplo:
+
+python
+Copiar
+Editar
+raise TipoDoErro('Mensagem de erro')
+raise TypeError('O texto deve ser string')
+🔹 O bloco Try/Except
+Utilizamos o bloco try/except para tratar erros que podem ocorrer no nosso código, prevenindo que o programa pare de funcionar e o usuário receba mensagens de erro inesperadas.
+
+🔹 Try, Except, Else e Finally
+
+finally: Sempre será executado ao final, geralmente utilizado para fechar ou desalocar recursos.
+
+🔹 Debugando código com PDB
+PDB -> Python Debugger
+Para utilizar o PDB precisamos importar a biblioteca e então utilizar a função set_trace().
+
+✅ Fim do módulo 10
+---
+
+📦 Módulo 11 - Trabalhando com Módulos Python
+🔹 O módulo Random
+Módulo random -> Possui várias funções para geração de números pseudo-aleatórios, bom para sorteios de números aleatórios e geração dos mesmos.
+
+🔹 Trabalhando com módulos Built-In
+Módulos Built-in (módulos integrados que já vêm instalados no Python)
+
+🔹 Módulos customizados
+Como módulos Python nada mais são que arquivos .py, então todos os arquivos que criamos no curso são módulos prontos para serem utilizados. Podemos criar arquivos com funções e importar em outros arquivos, tendo assim módulos customizados.
+
+🔹 Instalando e utilizando Módulos Externos
+Utilizamos o gerenciador de pacotes do Python chamado Pip - Python Installer Package.
+O exemplo utilizado na aula foi o colorama, utilizado para permitir impressão de textos coloridos no terminal.
+
+🔹 Pacotes
+
+Módulo -> É apenas um arquivo em Python que pode ter diversas funções para utilizarmos.
+
+Pacote -> É um diretório contendo uma coleção de módulos.
+
+🔹 Dunder Main e Dunder Name
+Em Python são utilizados dunders para criar funções/atributos usando Double Under (__) para não gerar conflito com nomes.
+
+__name__
+
+__main__
+
+✅ Fim do módulo 11
+
+---
 ## 📌 Módulo 14 - Decoradores em Python
 
 ### 🔹 Funções de maior grandeza
