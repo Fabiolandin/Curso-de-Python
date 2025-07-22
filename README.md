@@ -226,6 +226,70 @@ __main__
 ✅ **Fim do módulo 11**
 
 ---
+## 🛠️ Módulo 12 - Leitura e Escrita em Arquivos
+
+🔹 Leitura de Arquivos
+Para ler um arquivo em python, utilizamos a função integrada open().
+open() -> Na forma mais simples de utilização nós passamos apenas um parâmetro de entrada que é o nome do arquivo a ser lido.
+
+🔹 Seek e Cursors
+seek() -> é utilizada para movimentar o cursor pelo arquivo recebendo parâmetro aonde deve ler.
+
+🔹 O comando With
+O bloco with é utilizado para criar um contexto de trabalho onde os recursos utilizados são fechados após o bloco with.
+Passos para se trabalhar com arquivos:
+1 - Abrimos o arquivo
+2 - Manipulamos o arquivo
+3 - Fechamos o arquivo
+
+🔹 Escrevendo em arquivos
+Abrindo um arquivo para escrita com o modo 'w', se o arquivo não existir será criado, caso ele já exista o anterior será apagado e o novo será criado "reescrito".
+
+🔹 Modos de Arquivos
+Modos de abertura de arquivo:
+r -> Abre para leitura de arquivo - padrão
+w -> Abre para escrita - Sobrescreve caso o arquivo já exista
+x -> Abre para escrita somente se o arquivo não existir - caso o arquivo já exista gera um FileExistsError
+a -> Abre para escrita adicionando o conteúdo ao final do arquivo
++ -> Abre para o modo de atualização: Leitura e escrita.
+
+🔹 StringIO
+StringIO -> Utilizado para ler e criar arquivos em memória.
+
+✅ Fim do módulo 12
+
+---
+
+## 🛠️ Módulo 13 - Iteradores e Geradores Python
+
+🔹 Entendendo Iterators e Iteráveis
+
+Iterator ->
+
+Objeto que pode ser iterado.
+
+Objeto que retorna um dado, sendo um elemento por vez quando uma função next() é chamada
+
+Iterable ->
+
+Objeto que irá retornar um iterator quando a função iter() for chamada
+
+É qualquer objeto que você pode percorrer com um for ou passar para funções como list(), sorted(), map(), filter() etc.
+
+🔹 Geradores
+Geradores (Generators) são iteradores (Iterators)
+
+Outras informações:
+
+Generators podem ser criados com funções geradoras
+
+Funções geradoras utilizam a palavra reservada yield
+
+Generators podem ser criados com Expressões Geradoras
+
+✅ Fim do módulo 13
+
+---
 ## 📌 Módulo 14 - Decoradores em Python
 
 ### 🔹 Funções de maior grandeza
